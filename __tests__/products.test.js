@@ -1,4 +1,4 @@
-const {products} = require("../products");
+const { products } = require("../productFunctions");
 
 describe("products object", () => {
   test("should return an object", () => {
@@ -6,7 +6,6 @@ describe("products object", () => {
   });
   test("each product key should have a value of type number", () => {
     for (const key in products) {
-      console.log(typeof [key]);
       expect(typeof products[key]).toBe("number");
     }
   });
