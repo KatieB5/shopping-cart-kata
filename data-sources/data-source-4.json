@@ -1,6 +1,6 @@
 [
-  { "code": "A", "quantity": 1 },
-  { "code": "B", "quantity": 1 },
+  { "code": "A", "quantity": 6 },
+  { "code": "B", "quantity": 4 },
   { "code": "C", "quantity": 1 },
   { "code": "D", "quantity": 2 }
 ]

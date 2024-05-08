@@ -1,4 +1,4 @@
-const { products, addProduct, removeProduct } = require("../productFunctions");
+const { products, addProduct, removeProduct } = require("../products");
 
 describe("addProduct function", () => {
   test("should take 2 arguments: a new product object, and the existing products object to be updated, and return an updated object; otherwise should return an error", () => {

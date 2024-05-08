@@ -1,4 +1,4 @@
-const { products } = require("../productFunctions");
+const { products } = require("../products");
 
 describe("products object", () => {
   test("should return an object", () => {

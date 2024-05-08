@@ -33,4 +33,7 @@ const removeProduct = (products, deleteProd) => {
     return products;
 };
 
+//addProduct(products, {E: 68});
+//removeProduct(products, "F")
+
 module.exports = { products, addProduct, removeProduct };
