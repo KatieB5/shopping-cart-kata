@@ -12,7 +12,7 @@ This kata is a shopping cart checkout system. There are several products availab
 - New products can be added
 - Old products can be removed
 
-## offerCalculator.js
+## offers.js
 
 - Contains the offers dataset: an object, storing each product that currently has an offer associated with it. Product names are keys, and the associated values are objects storing the product quantity and price.
 - New offers can be added
