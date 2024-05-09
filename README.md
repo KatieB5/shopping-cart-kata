@@ -8,23 +8,25 @@ This kata is a shopping cart checkout system. There are several products availab
 
 ### products.js
 
-- Contains the pricing dataset: an object storing all currently avialable products and the associated price for a single unit, as key-value pairs.
+Contains the pricing dataset: an object storing all currently avialable products and the associated price for a single unit, as key-value pairs.
 - New products can be added
 - Old products can be removed
 
 ## offers.js
 
-- Contains the offers dataset: an object, storing each product that currently has an offer associated with it. Product names are keys, and the associated values are objects storing the product quantity and price.
+Contains the offers dataset: an object, storing each product that currently has an offer associated with it. Product names are keys, and the associated values are objects storing the product quantity and price.
 - New offers can be added
 - Old offers can be removed
 
 ### checkout.js
 
 Contains the checkout function.
+- Takes a array of objects as a data source, and returns the subtotal after applying any available offers
 
-- Takes a array of objects as a data source, and returns the subtotal
+### Data-sources folder and files
+Contains example data sources (each is an array of objects), that can be consumed by the checkout function, and were used as part of unit testing.
 
-### test files
+### Test folder and files
 
 Contains testing files for products, offerCalculator and checkout files.
 
@@ -37,6 +39,11 @@ Contains testing files for products, offerCalculator and checkout files.
 2. `cd` into the shopping-cart-kata folder
 3. run `npm i` to install the dependancies
 
-## Use the checkout
+## Use the checkout, add/remove a product
+1. To use the checkout,
+2. To add/remove a product, invoke the function in the products.js file and run 'node products.js' in your terminal e.g.
+`addProduct(products, {E: 68})`
+`removeProduct(products, "F")`
 
-## Run the test suites
+To view the output of the function in the terminal, you can use `console.log()` e.g.,
+`console.log(addProduct(products, {E: 68}))`
