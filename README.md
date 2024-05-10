@@ -29,12 +29,9 @@ Contains the checkout function (`checkout()`).
 
 Contains example data sources (each is an array of objects), that can be consumed by the checkout function, and were used as part of unit testing.
 
-### Test folder and files
+### Tests folder and files
 
-Contains testing files for products, productFunctions, offers, offerFunctions and checkout files.
-
-1. To run all test files: From the shopping-cart-kata folder, run `npm t`
-2. To run an individual test file: `npm t __tests__/nameOfFileYouWantToTest.js`
+The __tests_ folder contains the testing files for products, productFunctions, offers, offerFunctions and checkout files.
 
 ## Get started
 
@@ -48,6 +45,11 @@ Contains testing files for products, productFunctions, offers, offerFunctions an
 2. To add/remove a product, invoke the function in the products.js file e.g. `addProduct({E: 68})`, `removeProduct("F")` and run `node products.js` in your terminal
 3. To add/remove an offer, invoke the function in the offers.js file e.g. `addOffer({D: {prodQuantity: 4, offerPrice: 80,}})`, `removeOffer({A: {prodQuantity: 3, offerPrice: 140,}})` and run `node offers.js` in your terminal
 
-
 To view the output of the function in the terminal, you can use `console.log()` e.g.,
 `console.log(addProduct({E: 68}))`
+
+## Run the tests
+1. To run all test files: From the shopping-cart-kata folder, run `npm t`
+2. To run an individual test file: `npm t __tests__/nameOfFileYouWantToTest.js`
+
+
