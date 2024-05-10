@@ -31,7 +31,7 @@ Contains example data sources (each is an array of objects), that can be consume
 
 ### Tests folder and files
 
-The __tests_ folder contains the testing files for products, productFunctions, offers, offerFunctions and checkout files.
+The __ __tests__ __ folder contains the testing files for products, productFunctions, offers, offerFunctions and checkout files.
 
 ## Get started
 
