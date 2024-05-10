@@ -10,7 +10,7 @@ let currentOffers = {
 };
 
 const addOffer = (newOffer) => {
-    const productName = Object.keys(newOffer)[0];
+  const productName = Object.keys(newOffer)[0];
   if (typeof newOffer !== "object" || Array.isArray(newOffer)) {
     return "Please provide a newOffer as an object data type";
   } else if (
@@ -27,8 +27,7 @@ const addOffer = (newOffer) => {
     if (
       newOffer[productName].prodQuantity ===
         currentOffers[productName].prodQuantity ||
-      newOffer[productName].offerPrice ===
-        currentOffers[productName].offerPrice
+      newOffer[productName].offerPrice === currentOffers[productName].offerPrice
     ) {
       return "The offer provided already exists; please provide a unique newOffer";
     }
@@ -56,7 +55,12 @@ const removeOffer = (offerToBeDeleted) => {
   }
 
   if (Object.hasOwn(currentOffers, productName)) {
-    if (offerToBeDeleted[productName] === currentOffers[productName]) {
+    if (
+      offerToBeDeleted[productName].prodQuantity ===
+        currentOffers[productName].prodQuantity &&
+      offerToBeDeleted[productName].offerPrice ===
+        currentOffers[productName].offerPrice
+    ) {
       delete currentOffers[productName];
       return currentOffers;
     } else {
