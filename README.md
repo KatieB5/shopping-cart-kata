@@ -12,7 +12,7 @@ This kata was built using a test-driven-development (TDD) approach, written in J
 
 Contains a pricing dataset: an object storing all currently avialable products and the associated price for a single unit, as key-value pairs.
 - New products can be added (`addProduct()`)
-- Old products can be removed (`removeProduct`)
+- Old products can be removed (`removeProduct()`)
 
 ### Offers.js
 
@@ -42,7 +42,7 @@ Contains testing files for products, productFunctions, offers, offerFunctions an
 2. `cd` into the shopping-cart-kata folder
 3. run `npm i` to install the dependancies
 
-## Use the checkout, add/remove a product, add/remove an offer
+## Use checkout(), add/removeProduct(), add/removeOffer()
 1. To use the checkout, require in the data sources you wish to test at the top of the checkout.js file e.g. 
 `const dataSource = require("./data-sources/data-source-1.json")`, then invoke the checkout function with your data source as the argument e.g., `checkout(myDataSource)` or pass your data directly into the function e.g., `checkout([{ code: "A", quantity: 6 },{ code: "B", quantity: 4 },{ code: "C", quantity: 1 },{ code: "D", quantity: 2 },])`, then run `node checkout.js` in your terminal
 2. To add/remove a product, invoke the function in the products.js file e.g. `addProduct({E: 68})`, `removeProduct("F")` and run `node products.js` in your terminal
