@@ -5,10 +5,8 @@ let products = {
   D: 12,
 };
 
-const addProduct = (products, newProd) => {
-  if (typeof products !== "object" || Array.isArray(products)) {
-    return "Please provide a current products object";
-  } else if (typeof newProd !== "object" || Array.isArray(newProd)) {
+const addProduct = (newProd) => {
+  if (typeof newProd !== "object" || Array.isArray(newProd)) {
     return "Please provide a new product object";
   } else if (typeof Object.values(newProd)[0] !== "number") {
     return "Please make sure the product price is a type of number";
@@ -19,18 +17,16 @@ const addProduct = (products, newProd) => {
   return products;
 };
 
-const removeProduct = (products, deleteProd) => {
-    if (typeof products !== "object" || Array.isArray(products)) {
-        return "Please provide a current products object";
-      } else if (typeof deleteProd !== "string") {
-        return "Please provide the name of the product to be deleted as a string";
-      } else if (!products[deleteProd]) {
-        return "The product does not exist"
-      }
+const removeProduct = (deleteProd) => {
+  if (typeof deleteProd !== "string") {
+    return "Please provide the name of the product to be deleted as a string";
+  } else if (!products[deleteProd]) {
+    return "The product does not exist";
+  }
 
-    delete products[deleteProd];
-    
-    return products;
+  delete products[deleteProd];
+
+  return products;
 };
 
 module.exports = { products, addProduct, removeProduct };
